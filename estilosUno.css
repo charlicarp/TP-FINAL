@@ -1,0 +1,115 @@
+/*Barra Navegacion*/
+
+.conf{
+   color: white;
+}
+
+.comprarTickets{
+     color: rgb(33, 187, 33);
+}
+
+
+/*Texto Foto*/
+
+.confBsAs{
+    color: white;
+    margin-top: -32%;
+    margin-right: 9%;
+    text-align: right;
+    font-size:x-large;
+}
+
+.btn btn-success{
+    color: white;
+}
+
+
+/*Titulo Oradores*/
+
+#oradores{
+   margin-top: 15%;
+   text-align: center;
+}
+
+h3{
+   text-align: center;
+   font-weight:bolder; 
+ }
+
+
+/*Contenedor Cards*/
+
+.contenedorCards{
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/*Badge*/
+
+.card-body{
+    text-align: left;
+}
+
+/*Nombres Oradores y Texto*/
+
+.card-title{
+    font-weight: bolder;
+    text-align: left;
+}
+
+.card-text-oradores{
+    font-weight: lighter;
+    text-align: justify;
+}
+
+
+/*Playa Texto*/
+
+h6{
+    text-align: center;
+}
+
+#Playa{
+    margin-top: 2%;
+}
+
+.card-body-texto-playa{
+    font-weight: lighter;
+    background-color: darkgray;
+    color: white;
+    margin-top: 2%;
+}
+
+.imagenPlaya{
+    padding-right: 0%;
+}
+
+
+/*Contenedor Formulario*/
+
+.contenedorFormulario{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.buttonFormulario{
+    color: white;
+    background-color: chartreuse;
+}
+
+.recuerda{
+    font-weight: lighter;
+}
+
+
+/*Footer*/
+
+footer{
+    margin-top: 2%;
+}
+
+.navFooter{
+    margin-left: 25%;
+    margin-right: 25%;
+}

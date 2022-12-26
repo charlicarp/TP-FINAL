@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Mis Estilos -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>TP Integrador Oradores</title>
+
+</head>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-secondary">
+            <div class="container-fluid">
+                <a class="navbar-brand conf" href="#">Conf Bs As</a>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Los oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">El lugar y la fecha</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link headerConvierteteEnOrador" href="#">Conviértete en orador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link comprarTickets" href="#Nombre">Comprar tickets</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+<body>
+
+
+<!-- CARDS CON DESCUENTOS-->
+
+<div class="contenedorCardsConDescuentos">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100 cardEstudiante">
+                <div class="card-body">
+                <h5 class="card-title">Estudiante</h5>
+                <p class="card-text">Tiene un descuento</p>
+                <p class="card-text porcentajeDescuento">80%</p>
+                <p class="card-text">* presentar documentacion</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 cardTrainee">
+            <div class="card-body">
+                <h5 class="card-title">Trainee</h5>
+                <p class="card-text">Tiene un descuento</p>
+                <p class="card-text porcentajeDescuento">50%</p>
+                <p class="card-text">* presentar documentacion</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100 cardJunior">
+        <div class="card-body">
+          <h5 class="card-title">Junior</h5>
+          <p class="card-text">Tiene un descuento</p>
+          <p class="card-text porcentajeDescuento">15%</p>
+          <p class="card-text">* presentar documentacion</p>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+<!-- FORMULARIO -->    
+
+<form> <!-- para que funcionen los input y el boton reset para borrar el formulario debe estar dentro de FORM-->  
+        <section id="Formulario">
+          <div class="contenedorFormulario">
+            <div>
+              <h6> VENTA </h6>
+              <h3> VALOR DEL TICKET $200 </h3>
+                
+            <div class="row">
+                <div class="col mb-3">
+                  <input id="Nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                </div>
+                <div class="col">
+                  <input id="Apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                </div>
+            </div>
+            
+              <div class="mb-3">
+                <input id="Correo" type="email" class="form-control" placeholder="Correo">
+              </div>
+                                      
+              <div class="row">
+                <div class="col mb-3">
+                <p class="recuerda" id="cantidad">Cantidad</p>
+                <input type="number" class="form-control" placeholder="Seleccione la cantidad" aria-label="Cantidad" id="cantidadTickets" min="1" required>
+                </div>
+              
+              <div class="col">
+                <p class="recuerda">Categoria</p>
+                <select class="form-select" aria-label="Categoria" id="seleccionCategoria" >
+                <option value="0">---Seleccione una opcion---</option>
+                <option value="1">Sin Categoria</option>
+                <option value="2">Estudiante</option>
+                <option value="3">Trainee</option>
+                <option value="4">Junior</option>
+                </select>
+              </div>
+            </div>
+
+
+<!-- BOTON TOTAL A PAGAR -->   
+             
+                <div class="alert alert-primary mt-2 mb-4" role="alert">Total a Pagar: $ <span id="totalPago" class="align-middle"></span>
+                </div>
+              </div>
+            </div>
+         
+        </section> 
+
+
+<!-- BOTON BORRAR Y RESUMEN--> 
+
+<section id="contenedorButton">
+    <div class="contenedorButtonBorraResumen">
+        <button id="Borrar" type="reset" class="btn btn-success btn-lg botonBorrar">Borrar</button>
+        <button id="Resumen" type="button" class="btn btn-secondary btn-lg botonResumen">Resumen</button>
+    </div>
+</section>
+</form>
+
+<div class="contenedorMensajesAutenticacion">
+  <div class="mt-2">
+    <p id="mensajeNombre"></p>
+    <p id="mensajeApellido"></p>
+    <p id="mensajeCorreo"></p>
+    <p id="mensajeCantidad"></p>
+    <p id="mensajeCategoria"></p>
+  </div>
+</div>
+
+
+<!-- FOOTER -->    
+
+<footer class="navbar navbar-expand-lg bg-secondary">
+  <div class="container navFooter contenedorFooter" >
+      <div class="">
+        <ul class="navbar-nav">
+  
+        <div class="col col-2 text-center">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Preguntas Frecuentes</a>
+          </li>
+        </div>
+
+        <div class="col col-2 text-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Contactanos</a>
+          </li>
+        </div>
+                  
+        <div class="col col-2 text-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Prensa</a>
+          </li>
+        </div>
+
+        <div class="col col-2 text-center ">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Conferencia</a>
+          </li>
+        </div>
+
+        <div class="col col-2 text-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Terminos y Condiciones</span></a>
+          </li> 
+        </div>
+
+        <div class="col col-2 text-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Privacidad</span></a>
+          </li> 
+        </div>
+
+        <div class="col text-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Estudiantes</span></a>
+          </li> 
+        </div>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="./scripts.js"></script>
+</body>
+
+</html>
+
+

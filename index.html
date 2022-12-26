@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Mis Estilos -->
+    <link rel="stylesheet" href="./estilosUno.css">
+
+    <title>TP Integrador Oradores</title>
+
+</head>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-secondary">
+            <div class="container-fluid">
+                <a class="navbar-brand conf" href="#">
+                  <img src="./imagenesTpIntegrador/codoacodo.png" alt="Logo" width="150" height="80" class="d-inline-block align-text-center">
+                  Conf Bs As</a>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#conferenciaBsAs">La conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#oradores">Los oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Playa">El lugar y la fecha</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#nombreParaSerOrador">Conviertete en orador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link comprarTickets" href="./tickets.html">Comprar tickets</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+<body>
+    <div>
+        <section class="comprar" id="comprar">
+            <div>
+                <img src="./imagenesTpIntegrador/ba1.jpg" class="img-fluid" alt="imagen palacio">
+            </div>
+                <div id="conferenciaBsAs" class="confBsAs">
+                <h1>Conf Bs As</h1>
+                <p>Bs As llega por primera vez a la Argentina. Un evento para compartir con <br> nuestra comunidad el conocimiento y experiencia de los expertos que <br> estan creando el futuro de internet. Ven a conocer a miembros del <br> evento, a otros estudiantes de Codo a Codo y los oradores de primer <br> nivel que tenemos para ti. Te esperamos!</p>
+                <button type="button" class="btn btn-outlinze-light" href="#nombreParaSerOrador">Quiero ser orador</button>
+                <button type="button" class="btn btn-success" href="./tickets.html">Comprar tickets</button> 
+            </div>
+        </section>
+
+<!-- ORADORES --> 
+    
+        <section id="oradores">
+            <h6> conoce a los </h6>
+            <h3> ORADORES </h3>
+            <div class="contenedorCards">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./imagenesTpIntegrador/steve.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <span class="badge text-bg-warning">Warning</span>
+                      <span class="badge text-bg-info">Info</span>
+                      <h5 class="card-title">Steve Jobs</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./imagenesTpIntegrador/bill.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <span class="badge text-bg-warning">Warning</span>
+                      <span class="badge text-bg-info">Info</span>
+                      <h5 class="card-title">Bill Gates</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./imagenesTpIntegrador/ada.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <span class="badge text-bg-secondary">Secondary</span>
+                      <span class="badge text-bg-danger">Danger</span>
+                      <h5 class="card-title">Ada Lovelace</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                </div>
+                </div>
+              </div>  
+            </div>
+        </section>      
+
+<!-- PLAYA -->   
+
+        <section id="Playa">
+          <div class="card mb-3" style="max-width:max-content;">
+            <div class="row g-6">
+              <div class="col-md-6 imagenPlaya">
+                <img src="./imagenesTpIntegrador/honolulu.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+                <div class="col-md-6 bg-secondary">
+                  <div class="card-body-texto-playa bg-secondary">
+                    <h5 class="card-title">Bs As - Octubre</h5>
+                    <p class="card-text-playa">Buenos Aires es la provincia y localidad mas grande del estado de Argentina. En los Estados Unidos, Honolulu es la <br> mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al area <br> urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad- <br> condado consolidada sobre toda la ciudad (aproximadamente 600 km² de superficie).</p>
+                    <button type="button" class="btn btn-secondary btn-outline-light">Conocé más</button>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </section>
+
+<!-- FORMULARIO -->          
+
+        <section id="Formulario">
+          <div class="contenedorFormulario">
+            <div>
+              <h6> CONVIÉRTETE EN UN </h6>
+              <h3> ORADOR </h3>
+              <h6>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</h6>
+            
+              <div class="row">
+                <div class="col mb-3">
+                  <input type="text" class="form-control" placeholder="Nombre" id="nombreParaSerOrador" aria-label="Nombre">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                </div>
+              </div>
+            
+              <div class="mb-3">
+                <input type="sobreQueQuieresHablar" class="form-control" id="exampleFormControlInput3" placeholder="Sobre que quieres hablar?">
+                <p class="recuerda">Recuerda incluir un título para tu charla</p>
+              </div>
+
+              <div class="d-grid gap-2">
+                <a href="index.php"><button class="buttonFormulario" type="button">Enviar</button></a>
+              </div>
+            </div>
+          </div>
+        </section> 
+
+<!-- FOOTER -->    
+
+<footer class="navbar navbar-expand-lg bg-secondary">
+  <div class="container-fluid navFooter" >
+      <div class="row">
+        <ul class="navbar-nav">
+  
+        <div class="col col-2 text-center">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Preguntas Frecuentes</a>
+          </li>
+        </div>
+
+        <div class="col col-2 text-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Contactanos</a>
+          </li>
+        </div>
+                  
+        <div class="col col-2 text-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Prensa</a>
+          </li>
+        </div>
+
+        <div class="col col-2 text-center ">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Conferencia</a>
+          </li>
+        </div>
+
+        <div class="col col-2 text-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Terminos y Condiciones</span></a>
+          </li> 
+        </div>
+
+        <div class="col col-2 text-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Privacidad</span></a>
+          </li> 
+        </div>
+
+        <div class="col text-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Estudiantes</span></a>
+          </li> 
+        </div>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+
+
+</html>
